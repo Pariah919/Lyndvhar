@@ -84,7 +84,7 @@
 	H.mind.adjust_skillrank(/datum/skill/combat/maces, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/shields, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/riding, 1, TRUE)			//Heavy-knight so not as good at riding. Don't crush your mount!
-	H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)		
+	H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)			//these guys suck with ranged weapons compared to other knights
 
 	//Normal shared skill section.
@@ -109,12 +109,12 @@
 	H.change_stat("speed", -1)
 
 	H.adjust_blindness(-3)
-	var/weapons = list("Zweihander","Great Mace","Battle Axe", "Estoc")
+	var/weapons = list("Greatsword","Great Mace","Battle Axe", "Estoc")
 	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 	H.set_blindness(0)
 	switch(weapon_choice)
-		if("Zweihander") 	// A two-handed sword, but not the strongest one
-			r_hand = /obj/item/rogueweapon/greatsword/zwei
+		if("Greatsword") 	// A two-handed sword, but not the strongest one
+			r_hand = /obj/item/rogueweapon/greatsword
 			backl = /obj/item/gwstrap
 		if("Great Mace")	// Great-mace, 2-handed
 			r_hand = /obj/item/rogueweapon/mace/goden/steel
@@ -122,7 +122,7 @@
 			r_hand = /obj/item/rogueweapon/stoneaxe/battle
 		if("Estoc")
 			r_hand = /obj/item/rogueweapon/estoc
-	
+
 
 	neck = /obj/item/clothing/neck/roguetown/gorget
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/full/iron	//this is actually a steel cuirass, not half plate.
@@ -232,7 +232,7 @@
 	H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/shields, 2, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/misc/riding, 4, TRUE)	
+	H.mind.adjust_skillrank(/datum/skill/misc/riding, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/bows, 4, TRUE)
 
@@ -301,17 +301,17 @@
 
 /datum/outfit/job/roguetown/knight/irregularknight/pre_equip(mob/living/carbon/human/H)
 	..()
-	H.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)		
+	H.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)	//Swords and knives class, not very good at anything else.
 	H.mind.adjust_skillrank(/datum/skill/combat/knives, 4, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/axes, 2, TRUE)		
+	H.mind.adjust_skillrank(/datum/skill/combat/axes, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 2, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)		
-	H.mind.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)		
-	H.mind.adjust_skillrank(/datum/skill/misc/riding, 2, TRUE)		
+	H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/misc/riding, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/bows, 3, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/misc/climbing, 4, TRUE)		
+	H.mind.adjust_skillrank(/datum/skill/misc/climbing, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)	    //less wrestling, further in line with them being speedy and not bulky
 	H.mind.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)		//marginally more athletic than the other knights
 
@@ -331,7 +331,7 @@
 	H.change_stat("strength", 1)
 	H.change_stat("endurance", 2)
 	H.change_stat("speed", 2)
-	H.change_stat("intelligence", 1) 
+	H.change_stat("intelligence", 1)
 
 	H.adjust_blindness(-3)
 	var/weapons = list("Bastard Sword","Estoc","Sabre + Buckler")
@@ -345,7 +345,7 @@
 
 		if("Estoc")
 			r_hand = /obj/item/rogueweapon/estoc
-		
+
 		if("Sabre + Buckler")
 			r_hand = /obj/item/rogueweapon/sword/sabre
 			backl = /obj/item/rogueweapon/shield/buckler
@@ -369,7 +369,7 @@
 		"Sallet"			= /obj/item/clothing/head/roguetown/helmet/sallet,
 		"None"
 	)
-	
+
 	neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
 	var/helmchoice = input("Choose your Helm.", "TAKE UP HELMS") as anything in helmets
 	if(helmchoice != "None")
