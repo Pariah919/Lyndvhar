@@ -123,6 +123,12 @@
 	cost = 100
 	contains = list(/obj/item/rogueweapon/mace/goden/steel)
 
+/datum/supply_pack/rogue/Brigand/ghammer
+	name = "Steel Greathammer"
+	cost = 80
+	contains = list(/obj/item/rogueweapon/mace/goden/greathammer/steel)
+
+
 /datum/supply_pack/rogue/Brigand/silverwarhammer
 	name = "Silver Warhammer"
 	cost = 200

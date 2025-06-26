@@ -13,17 +13,24 @@
 
 /datum/supply_pack/rogue/Knave/leather
 	name = "Leather Armor"
-	cost = 10
+	cost = 30
 	contains = list(/obj/item/clothing/suit/roguetown/armor/leather)
+
+
+/datum/supply_pack/rogue/Knight/hgambeson
+	name = "Heavy Gambeson"
+	cost = 20
+	contains = list(/obj/item/clothing/suit/roguetown/armor/gambeson/heavy)
+
 
 /datum/supply_pack/rogue/Knave/leather/studded
 	name = "Studded Leather Armor"
-	cost = 20
+	cost = 120
 	contains = list(/obj/item/clothing/suit/roguetown/armor/leather/studded)
 
 /datum/supply_pack/rogue/Knave/leather/Lhelmet
 	name = "Leather Helmet"
-	cost = 5
+	cost = 15
 	contains = list(/obj/item/clothing/head/roguetown/helmet/leather)
 
 
@@ -32,14 +39,16 @@
 	cost = 5
 	contains = list(/obj/item/clothing/wrists/roguetown/bracers/leather)
 
+
 /datum/supply_pack/rogue/Knave/longbow
 	name = "Longbow"
-	cost = 40
+	cost = 70
 	contains = list(/obj/item/gun/ballistic/revolver/grenadelauncher/bow/longbow)
+
 
 /datum/supply_pack/rogue/Knave/recurvebow
 	name = "Recurve Bow"
-	cost = 20
+	cost = 40
 	contains = list(/obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve)
 
 
@@ -57,41 +66,41 @@
 
 /datum/supply_pack/rogue/Knave/parrydag
 	name = "Parry Dagger"
-	cost = 20
+	cost = 70
 	contains = list(/obj/item/rogueweapon/huntingknife/idagger/steel/parrying)
 
 
 /datum/supply_pack/rogue/Knave/Navaja
 	name = "Navaja"
-	cost = 20
+	cost = 40
 	contains = list(/obj/item/rogueweapon/huntingknife/idagger/navaja)
 
 /datum/supply_pack/rogue/Knave/elfdagger
 	name = "Elven Dagger"
-	cost = 40
+	cost = 200
 	contains = list(/obj/item/rogueweapon/huntingknife/idagger/silver/elvish)
 
 /datum/supply_pack/rogue/Knave/smesser
 	name = "Steel Messer"
-	cost = 30
+	cost = 40
 	contains = list(/obj/item/rogueweapon/sword/messer)
 
 
 /datum/supply_pack/rogue/Knave/steeltossblades
 	name = "Steel Tossblade Belt"
-	cost = 20
+	cost = 40
 	contains = list(/obj/item/storage/belt/rogue/leather/knifebelt/black/steel)
 
 
 /datum/supply_pack/rogue/Knave/crossbow
 	name = "Crossbow"
-	cost = 20
+	cost = 80
 	contains = list(/obj/item/gun/ballistic/revolver/grenadelauncher/crossbow)
 
 
 /datum/supply_pack/rogue/Knave/bow
 	name = "Bow"
-	cost = 10
+	cost = 20
 	contains = list(/obj/item/gun/ballistic/revolver/grenadelauncher/bow)
 
 /datum/supply_pack/rogue/Knave/quiver
@@ -127,6 +136,7 @@
 	name = "Pyroclastic bolt"
 	cost = 12
 	contains = list(/obj/item/ammo_casing/caseless/rogue/bolt/pyro)
+
 
 /datum/supply_pack/rogue/Knave/Mancatcher
 	name = "Mancatcher"
